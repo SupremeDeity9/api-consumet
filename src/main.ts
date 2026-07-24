@@ -3,6 +3,7 @@ import Redis from 'ioredis';
 import Fastify from 'fastify';
 import FastifyCors from '@fastify/cors';
 import fs from 'fs';
+import chalk from 'chalk';
 
 
 import anime from './routes/anime';
