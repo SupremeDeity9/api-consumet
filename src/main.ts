@@ -4,7 +4,9 @@ import Fastify from 'fastify';
 import FastifyCors from '@fastify/cors';
 import fs from 'fs';
 import chalk from 'chalk';
-
+import 'dotenv/config';
+import express from 'express';
+import cors from 'cors';
 
 import anime from './routes/anime';
 export const redis =
