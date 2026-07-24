@@ -10,7 +10,6 @@ import manga from './routes/manga';
 import comics from './routes/comics';
 import lightnovels from './routes/light-novels';
 import movies from './routes/movies';
-import meta from './routes/meta';
 import news from './routes/news';
 import chalk from 'chalk';
 import Utils from './utils';
@@ -137,7 +136,6 @@ export const tmdbApi = process.env.TMDB_KEY && process.env.TMDB_KEY;
   //await fastify.register(comics, { prefix: '/comics' });
   await fastify.register(lightnovels, { prefix: '/light-novels' });
   await fastify.register(movies, { prefix: '/movies' });
-  await fastify.register(meta, { prefix: '/meta' });
   await fastify.register(news, { prefix: '/news' });
 
   await fastify.register(Utils, { prefix: '/utils' });
